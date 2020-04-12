@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SignUp</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <style>
+      *{
+        margin:0;
+      }
+      .bigBox{
+        width:400px;
+        height: auto;
+        padding: 20px 30px;
+        background-color: white;
+        border-radius:5px
+        box-shadow:0 0 0 10px grey;
+        margin:auto;
+      }
+      h1{
+        background-color: white;
+        font-size:60px;
+        text-align:center;
+        margin-top: none;
+      }
+      body{
+        padding-top:20vh;
+      }
+      .button{
+          border-radius:5px;
+          background-color:#c7d0d8;
+          color:black;
+          width:320px;
+          height:50px;
+          border:none;
+          font-size:18px;
+          
+      }
+      .image{
+        position:absolute;
+        left:530px;
+      }
+      .logo{
+        background-color: white;
+        background-size: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: -9999999px;
+        padding: 10px;
+        padding-bottom:40px;
+        background-image: url(https://cdn.glitch.com/b958e8ba-2afd-4f0f-ab13-5aceced08425%2FLogo.PNG?v=1586652352909);  
+      }
+      
+    </style>
+  </head>
+  
+  <!-- actual website begins here-->
+  <body>
+    <div class="bigBox">
+      <h1> 
+        Sign Up
+      </h1>
+      <ul class="loginlist">
+        <li><input type="text" name="Username" placeholder="Username"></li>
+        <li><input type="password" name="Password" placeholder="Password"></li>
+        <li><button onclick="location.href='in/Journals.html'" type="button" class="button">
+         Sign Up</button></li>
+        <li class="logo">Get Better Logo</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- div tags - somantic tags:
+
+header, nav, section, footer 
+
+these are used a lot:
+ul = unordered list
+li = list
+
+-->

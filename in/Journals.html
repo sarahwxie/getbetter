@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GetBetter</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+  </head>
+  
+  <!-- actual website begins here-->
+  <body>
+    
+    <!-- layout -->
+    <header>
+        <h1>GetBetter</h1>
+    </header>
+    
+    <h2 class="username">Username</h2>
+  
+    <section>
+      <ul>
+        <li class="overarching">
+          <nav>
+            <ul>
+              <li><a href="Journals.html">Journals</a></li>
+              <li><a href="Predictions.html">Predictions</a></li>
+              <li><a href="Information.html">Information</a></li>
+              <li><a href="About-Us.html">About Us</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li class="overarching">
+          <div class="line"></div>
+        </li>
+        <li class="overarching">
+          <ul class= "content">
+            <li><h3>Hey, how are you doing?</h3></li>
+            <li class="form">
+<!--add action to the form after integrating with python   -->
+              <ul class="dateTime">
+                <li><h5>Dear Journal,</h5></li>
+                <li><input type="date" id="myDate" value="2020-01-01"></li>
+                <li><input type="time" id="myTime" name="inputTime" value="08:30"></li>
+              </ul>
+              <form>
+                <textarea type="text" id="feelings" name="feelings" value="How do you feel?" rows="5" cols="100"></textarea><br>
+                <textarea type="text" id="events" name="feelings" value="Did anything notable or different happen today?" rows="5" cols="100"></textarea><br><br>
+                <input type="submit" value="I'm done" class="submit">
+              </form> 
+            </li>
+          </ul>
+        </li>
+      </ul>
+      
+      
+    </section>
+
+    
+    
+  </body>
+</html>
+
+<!-- div tags - somantic tags:
+
+header, nav, section, footer 
+
+these are used a lot:
+ul = unordered list
+li = list
+
+-->
