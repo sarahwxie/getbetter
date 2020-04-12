@@ -7,7 +7,61 @@ from nltk.corpus import stopwords
 # from nltk.stem import PorterStemmer
 import pickle
 # from nltk.probability import ProbabilisticMixIn
-import Flask
+from flask import Flask, render_template, request
+# import requests
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/login.html')
+def login():
+    return render_template('login.html')
+
+
+@app.route('/SignUp.html')
+def signup():
+    return render_template('SignUp.html')
+
+
+@app.route('/in/About-Us.html')
+def aboutus():
+    return render_template('About-Us.html')
+
+
+@app.route('/in/Information.html')
+def Information():
+    return render_template('Information.html')
+
+
+@app.route('/in/Predictions.html')
+def Predictions():
+    return render_template('Predictions.html')
+
+
+@app.route('/in/Journals.html')
+def Journals():
+    return render_template('Journals.html')
+
+
+@app.route('/in/Journals.html?feelings=<string:thing1>&feelings=<string:thing2>', methods=["POST"])
+def Journals1(thing1, thing2):
+    # username = request.form.get("accountName")
+    # passName = request.form.get("password")
+    # print(username)
+    # print(passName)
+
+    print(thing1, thing2)
+    return render_template('Predictions.html')
+    
+
+
+
+if __name__ == '__main__':
+  app.run(debug=True)
 
 
 THRESHOLD = 0.2

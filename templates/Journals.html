@@ -52,7 +52,7 @@
               <form>
                 <textarea type="text" id="feelings" name="feelings" value="How do you feel?" rows="5" cols="100"></textarea><br>
                 <textarea type="text" id="events" name="feelings" value="Did anything notable or different happen today?" rows="5" cols="100"></textarea><br><br>
-                <input type="submit" value="I'm done" class="submit">
+                <input type="submit" value="I'm done" id ="subbutton" href="/feelings">
               </form> 
             </li>
           </ul>
@@ -63,7 +63,7 @@
     </section>
 
     
-    
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
   </body>
 </html>
 
