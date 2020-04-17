@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
     
     <style>
       .movement{
@@ -43,10 +43,10 @@
       <li class="overarching">
         <nav>
           <ul>
-            <li><a href="Journals.html">Journals</a></li>
-            <li><a href="Predictions.html">Predictions</a></li>
-            <li><a href="Information.html">Information</a></li>
-            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="/Journals.html">Journals</a></li>
+            <li><a href="/Predictions.html">Predictions</a></li>
+            <li><a href="/Information.html">Information</a></li>
+            <li><a href="/About-Us.html">About Us</a></li>
           </ul>
         </nav>
       </li>

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
     
     <style>
       *{
@@ -21,7 +21,7 @@
         height: auto;
         padding: 20px 30px;
         background-color: white;
-        border-radius:5px
+        border-radius:5px;
         box-shadow:0 0 0 10px grey;
         margin:auto;
       }
@@ -71,7 +71,7 @@
       <ul class="loginlist">
         <li><input type="text" name="Username" placeholder="Username"></li>
         <li><input type="password" name="Password" placeholder="Password"></li>
-        <li><button onclick="location.href='in/Journals.html'" type="button" class="button">
+        <li><button onclick="location.href='Journals.html'" type="button" class="button">
          Sign Up</button></li>
         <li class="logo">Get Better Logo</li>
       </ul>
