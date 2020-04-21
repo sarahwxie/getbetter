@@ -157,9 +157,11 @@ def Journals1():
     
 
 
+def go():
+    app.run(debug=True)
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  go()
 
 
 THRESHOLD = 0.2
